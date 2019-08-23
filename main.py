@@ -2,7 +2,7 @@ import cherrypy
 from datetime import datetime, timedelta
 from random import randrange
 
-cherrypy.config.update({'server.socket_port': 9090})
+cherrypy.config.update({'server.socket_port': 9090, 'server.socket_host':'0.0.0.0'})
 VIENTO=['NORTE','NOR ESTE','ESTE','SUR ESTE', 'SUR','SUR OESTE','OESTE','NOR OESTE','NORTE']
 
 def create_key_value():
